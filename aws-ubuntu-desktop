@@ -1,0 +1,41 @@
+sudo apt update
+sudo reboot
+sudo passwd ubuntu 
+sudo apt install ubuntu-desktop  
+#sudo vim ~/.vnc/xstartup
+    vncserver :1
+sudo apt install ubuntu-desktop
+   22  sudo apt install tightvncserver
+   23  sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+   24  vncserver :1
+  ##  sudo vim ~/.vnc/xstartup
+#!/bin/sh
+
+export XKL_XMODMAP_DISABLE=1
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+
+vncconfig -iconic &
+gnome-panel &
+gnome-settings-daemon &
+metacity &
+nautilus &
+gnome-terminal &
+```
+   26  vncserver -kill :1
+   27  vncserver :1
+   28  sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+   
+   30  version
+   31  ubuntu -version
+   32  cleaar
+   33  clear
+   34  cat /etc/os-release
+   35  sudo apt update
+   36  sudo apt install remina
+   37  sudo apt install remmina
+sudo apt install remmina remmina-plugin-rdp -y
