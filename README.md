@@ -1,4 +1,4 @@
-## project auto mount file system
+## project auto mount file system when system boot
 ##to check disk mount point 
 lsblk
 ```
