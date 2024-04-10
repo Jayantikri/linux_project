@@ -26,4 +26,11 @@ gnome-terminal &
 vncserver -kill :1
 vncserver :1
 edit security group custom tcp 5901
-
+## for window rdp connection
+```
+sudo apt-get update
+sudo apt install xrdp 
+sudo systemctl enable xrdp
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo apt-get install gnome-shell ubuntu-gnome-desktop
+sudo passwd ubuntu
