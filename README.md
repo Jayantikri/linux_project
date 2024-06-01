@@ -21,6 +21,9 @@ mount | grep ext4 0r cd /mnt/sda5/
 ```
  the system must dedicate resources to keep the mounted file system in place. This is not a problem with one or two mounts, but when the system is maintaining mounts to many 
  systems at one time, overall system performance can be affected
+ # For nfs server setup follow this link documentation
+ ```
+https://ubuntu.com/server/docs/network-file-system-nfs
 
 
 
